@@ -1,6 +1,6 @@
-<script>
-  import ToDoInputForm from "./ToDoInputForm.svelte"
-  import ToDoList from "./ToDoList.svelte"
+<script lang="ts">
+  import ToDoInputForm from './components/ToDoInputForm.svelte'
+  import ToDoList from './components/ToDoList.svelte'
 </script>
 
 <main>

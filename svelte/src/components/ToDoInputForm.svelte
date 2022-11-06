@@ -1,11 +1,11 @@
-<script>
-  import { toDoItems } from "./store.js"
+<script lang="ts">
+  import { toDoItems } from "./../store";
   import Send from "svelte-material-icons/Send.svelte";
 
   let newItem = ""
   
   function addToList() {
-    newId =  $toDoItems[0].id + 1
+    const newId =  $toDoItems[0].id + 1
     $toDoItems = [{id: newId, img: '-LCZyXN_onA', text: newItem}, ...$toDoItems]
     newItem = ""
   }
@@ -18,23 +18,20 @@
   </div>
 </div>
 
-
-<style>
+<style lang="scss">
   .inputForm {
     background: white;
     border-radius: 8px;
     padding: 16px;
-  }
-  textarea {
-    display: block;
-    resize: none;
-    width: 100%;
-  }
-  button {
-    margin: 0;
-  }
-  .sendButton {
-    display: flex;
-    justify-content: flex-end;
+
+    textarea {
+      display: block;
+      resize: none;
+      width: 100%;
+    }
+    .sendButton {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 </style>
