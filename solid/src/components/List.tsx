@@ -41,7 +41,6 @@ export const List: Component<ListProps> = (props) => {
           <li class={styles.todoItem}>
             <Switch>
               <Match when={item.editing === true}>
-                {/* <p>Fizz</p> */}
                 <div class={`${styles.left} ${styles.leftEditing}`}>
                   <img src={`https://source.unsplash.com/${item.img}`} alt="icon"/>
                   <textarea 
