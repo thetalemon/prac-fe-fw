@@ -1,0 +1,14 @@
+.inputForm {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+}
+.textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+}
+.sendButton {
+  display: flex;
+  justify-content: flex-end;
+}

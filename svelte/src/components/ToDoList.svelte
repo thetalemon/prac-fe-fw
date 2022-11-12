@@ -42,7 +42,6 @@
           <button on:click={() => removeFromList(index)}><Delete width="24px" height="24px" /></button>
         </div>
       {/if}
-
     </li>
   {/each} 
 </ul>

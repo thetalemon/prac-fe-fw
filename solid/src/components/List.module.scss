@@ -1,0 +1,52 @@
+
+.todoItemList {
+  background: white;
+  border-radius: 8px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  min-height: 80px;
+
+  &:not(:last-child){
+    border-bottom: 1px #224422 solid;
+  }
+  &:hover .right {
+    display: flex;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+}
+
+.left {
+  display: flex;
+  width: calc(100% - 55px);
+}
+
+.leftEditing {
+  textarea {
+    border: 1px solid #224422;
+    border-radius: 8px;
+  }
+}
+
+.right {
+  display: none;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.rightEditing {
+  display: flex;
+  justify-content: flex-end;
+}
